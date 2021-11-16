@@ -50,7 +50,8 @@ nav{
 }
 
 .background_image {
-    height: 760px;
+    background-size: cover;
+
 
 
 }
