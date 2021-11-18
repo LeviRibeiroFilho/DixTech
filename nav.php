@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-black">
   <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img style="margin-left: 8vw" src="src/dixtech.png" alt="" height="25" class="d-inline-block align-text-top">
+          <img style="margin-left: 6vw" src="src/dixtech.png" alt="" height="25" class="d-inline-block align-text-top">
         </a>
         
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,10 +14,10 @@
           
           <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Nossa Missão<span class="sr-only">(current)</span></a>
+            <a style="font-family: 'Nunito', sans-serif; margin-right: 2vw;" class="nav-link" href="#">Nossa Missão<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Quem Somos?<span class="sr-only">(current)</span></a>
+            <a style="font-family: 'Nunito', sans-serif;" class="nav-link" href="#">Quem Somos?<span class="sr-only">(current)</span></a>
           </li>
           </ul>
         </div>
