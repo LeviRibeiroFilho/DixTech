@@ -1,4 +1,4 @@
-create database dbDixPhp;
+ create database dbDixPhp;
 
 use dbDixPhp;
 
