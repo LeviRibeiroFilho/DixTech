@@ -9,6 +9,7 @@
     <!-- CSS Links (TailWind) -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="tailwind.config.js"></script>
 
     <!-- Bootstrap Links -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -42,11 +43,16 @@
 
 
 <?php
+
+  session_start();
+
   include 'conexao.php';
-  include 'nav.html';
+  include 'nav.php';
 
   $consulta = $cn->query('select * from func');
   $exibe = $consulta->fetch(PDO::FETCH_ASSOC);
+
+  
 
 ?>
 
@@ -56,7 +62,7 @@
 <div class="min-h-full flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-md w-full space-y-8">
     <div>
-      <img class="mx-auto h-16 w-auto" src="src/user.png" alt="Workflow">
+      <img class="mx-auto h-16 w-auto" src="src/user.png" alt="">
       <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
         Login
       </h2>
@@ -89,17 +95,13 @@
         </button>
       </div>
     </form>
-    <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-red-500">
-      <span class="text-xl inline-block mr-5 align-middle">
-        <i class="fas fa-bell"></i>
-      </span>
-      <span class="inline-block align-middle mr-8">
-        <b class="capitalize">Erro!</b> Login ou senha incorretos!
-      </span>
-    </div>
+    <h5 class="text-center text-sm text-gray-400 font-thin">
+      *Este login é destinado apenas a funcionários da DixTech
+    </h5>
+    
   </div>
 </div>
 
-    
+
 </body>
 </html>

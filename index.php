@@ -29,13 +29,15 @@
 <body>
 
     <?php 
+
+        session_start();
         include "conexao.php";
-        include "nav.html";
+        
 
-        //$consulta = $cn->query('select news_email, news_email_id from news_letter');
-        //$exibe = $consulta->fetch(PDO::FETCH_ASSOC)
+        //$consulta = $cn->query("select * from func where cd_func = '$_SESSION[ID]'");
+        //$exibe = $consulta->fetch(PDO::FETCH_ASSOC);
 
-
+        include "nav.php";
     ?>
     
 
