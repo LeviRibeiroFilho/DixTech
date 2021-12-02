@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,7 @@
 
     session_start();
 
-    if(empty($_SESSION['Status'])){
+    if(empty($_SESSION['ID'])){
       header('location:index.php');
   }
     include "conexao.php";
@@ -44,6 +44,15 @@
 ?>
 
 <!-- This example requires Tailwind CSS v2.s0+ -->
+
+<?php if($_SESSION['Status'] == 1){ ?>
+<a href="formFunc.php">
+<button class="bg-blue-500 hover:bg-blue-600 text-white font-normal py-2 px-4 rounded mx-10 mt-10">
+    + Adicionar
+</button>
+</a>
+<?php } ?>
+
 <div class="flex flex-col mx-10 my-10">
   <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">

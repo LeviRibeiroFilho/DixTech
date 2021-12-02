@@ -1,5 +1,5 @@
 <?php 
-
+    
     include "conexao.php";
 
 
@@ -17,7 +17,7 @@
         $exibeUsuario = $consulta->fetch(PDO::FETCH_ASSOC);
         if($exibeUsuario['status_func'] == 0){
             $_SESSION['ID'] = $exibeUsuario['cd_func'];
-            $_SESSION['Status']=0;
+            $_SESSION['Status'] = $exibeUsuario['status_func'];
             header('location:index.php');
         }
         else{
@@ -29,5 +29,4 @@
     else{
         header('location:erro.php');
     }
-
 ?>

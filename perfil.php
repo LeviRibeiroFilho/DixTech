@@ -33,18 +33,21 @@
     session_start();
 
     if(empty($_SESSION['ID'])){
-      header('location:index.php');
-  }
+      header('location:index.php');}
     include "conexao.php";
     
     
     
-   
+    //include "resize-class.php";
     include "nav.php";
 
     $cd_func = $_GET['cd'];
     $consulta = $cn->query("select * from func where cd_func = '$cd_func'");
     $exibe = $consulta->fetch(PDO::FETCH_ASSOC);
+
+    //$resizeObj = new resize('src/006.png');
+    //$resizeObj -> resizeImage(150, 150, 'auto');
+    //$resizeObj -> saveImage('src/006.png', 100);
 ?>
 
 <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
@@ -69,7 +72,7 @@
           <div class="flex flex-wrap justify-center">
             <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
               <div class="relative">
-                <img alt="..." src="src/<?php echo $exibe_usuario['foto_func'] ?>" class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px">
+                <img alt="..." src="src/<?php echo $exibe_usuario['foto_func'] ?>" class="shadow-xl rounded-full h-150 align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px">
               </div>
             </div>
             <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
