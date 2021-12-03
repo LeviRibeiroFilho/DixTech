@@ -60,7 +60,7 @@
 
 <section class="max-w-4xl p-6 mx-auto mb-10 bg-gray-400 rounded-md shadow-md mt-20">
     <h1 class="text-xl font-bold text-white capitalize dark:text-white">Adicionar Funcionário</h1>
-    <form method="post" action="inserirusuario.php" name="logon">
+    <form method="post" action="insFunc.php" name="insfunc" enctype="multipart/form-data">
         <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
             <div>
                 <label class="text-white dark:text-gray-200" for="username">Nome</label>
@@ -120,18 +120,23 @@
 
             <div>
                 <label class="text-white dark:text-gray-200" for="status">Status de atividade</label>
-                <select name="txtstatus" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                <select name="txtatividade" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
                     <option value="1" >Ativo</option>
                     <option value="0" >Inativo</option>
                 </select>
             </div>
 
             <div>
-                <label class="text-white dark:text-gray-200" for="passwordConfirmation">Date</label>
-                <input id="date" type="date" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                <label class="text-white dark:text-gray-200" for="passwordConfirmation">Data</label>
+                <input name="txtdata" type="date" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
             </div>
             
             <div>
+                <label for="txtfoto1">Foto Principal</label>
+
+			    <input type="file" accept="image/*" class="form-control" name="txtfoto1" id="txtfoto1">
+			</div>
+            <!--<div>
                 <label class="block text-sm font-medium text-white">
                 Image
               </label>
@@ -152,7 +157,10 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </div>-->
+        </div>
+        <div type="submit" class="flex justify-center mt-6 mb-5">
+            <button class="px-40 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-gray-600">Enviar</button>
         </div>
     </form>
 
@@ -160,9 +168,7 @@
 
 </section>
 
-<div class="flex justify-center mt-6 mb-10">
-    <button class="px-40 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-gray-600">Enviar</button>
-</div>
+
 
  
 

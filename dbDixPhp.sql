@@ -1,4 +1,4 @@
- create database dbDixPhp;
+create database dbDixPhp;
 
 use dbDixPhp;
 
@@ -57,6 +57,25 @@ insert into func values(
     default, 0, '15247534531', 'Murilo Boaventura', 'Lemes', '2006-03-015', 11978484565, 'murilolemes@gmail.com', 
     '12345678', 'Masculino', 'Desenvolvedor ASP.NET', 'Av. Régis Bittencourt, 156, SP', 0, '005.png'
 );
+
+/* 
+
+cd_func,
+status_func,
+cpf_func,
+nome_func,
+sobrenome_func,
+data_nasc,
+tel_func,
+email_func,
+senha_func,
+sexo_func,
+cargo_func,
+endereco_func,
+atividade_func,
+foto_func
+
+*/
 
 select * from func;
 
