@@ -43,7 +43,7 @@
 
 <?php
   include 'conexao.php';
-  include 'nav.html';
+  include 'nav.php';
 
   $consulta = $cn->query('select * from func');
   $exibe = $consulta->fetch(PDO::FETCH_ASSOC);
@@ -63,6 +63,8 @@
         <b class="capitalize">Erro!</b> Login ou senha incorretos!
       </span>
     </div>
+    <img class ="mx-auto h-40 w-auto" src="src/error.png">
+    <h5 class="text-center font-normal">Clique <a href="login.php">aqui</a> para tentar novamente</h3>
   </div>
 </div>
 

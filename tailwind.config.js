@@ -31,6 +31,14 @@ module.exports = {
 }
 
 module.exports = {
+  theme: {},
+  variants: {
+    display: ['responsive', 'dropdown']
+  },
+  plugins: [require('tailwindcss-dropdown')],
+}
+
+module.exports = {
   purge: [],
   presets: [],
   darkMode: false, // or 'media' or 'class'
