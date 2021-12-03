@@ -127,15 +127,26 @@
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 Funcionário
               </td> 
-              <?php } ?>     
+              <?php };     
 
-
+              $stats_lg = $_SESSION['Status'];
+              if($stats_lg != 0){ ?> 
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
 
                 <a href="editar.php"><i style='font-size:20px; color:gray;  margin-right:20%;' class="fas fa-pen"></i></a>
-                <a href="excluir.php"><i style='font-size:20px; color:red;' class="fas fa-trash"></i></a>
-                
+                <a href="confirmar.php?cd=<?php echo $exibe['cd_func'] ?>"><i style='font-size:20px; color:red;' class="fas fa-trash"></i></a>
+
               </td>
+              <?php } else { ?>  
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+
+                  <a href="#"><i style='font-size:20px; color:gray;  margin-right:20%;' class="fas fa-pen"></i></a>
+                  <a href="#"><i style='font-size:20px; color:gray;' class="fas fa-trash"></i></a>
+
+                </td>
+              <?php } ?>     
+
+              
             </tr>
           </tbody>
           <?php }; ?>
