@@ -31,6 +31,9 @@
     <?php 
 
         session_start();
+
+         
+
         include "conexao.php";
         
 
@@ -39,7 +42,17 @@
 
         include "nav.php";
 
-        $cd_excluir = $_GET['cd'];
+        
+
+        if(empty($_GET['cd'])){
+            $cd_excluir = $_GET['cd_e'];
+            
+        }
+        else {
+            $cd_excluir = $_GET['cd'];
+        
+        }
+        
     ?>
 
     <p class="text-center text-gray-600 mt-10">Digite sua senha para confirmar a exclusão do Usuário</p>
@@ -50,6 +63,20 @@
     	</form>
     </div>
     <p class="text-center text-red-300 mt-6 ">*Esta ação é irreversível!</p>
+
+    <?php 
+
+    
+    if(empty($_GET['error'])){
+        echo '';
+    }
+    else {
+        $error = $_GET['error'];
+    ?>
+        <p class="text-center text-red-600 mt-6 text-x1 font-semibold"><?php echo $error; ?></p>
+    <?php  
+    }
+    ?>
 
 
 </body>
