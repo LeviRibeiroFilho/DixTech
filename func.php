@@ -88,7 +88,7 @@
                   </div>
                   <div class="ml-4">
                     <div class="text-sm font-medium text-gray-900">
-                      <a href="funcinfo.php"><?php echo $exibe['nome_func'] ?></a>
+                      <a href="perfil.php?cd_f=<?php echo $exibe['cd_func'] ?>"><?php echo $exibe['nome_func'] ?></a>
                     </div>
                     <div class="text-sm text-gray-500">
                       <?php echo $exibe['cargo_func'] ?>
@@ -133,7 +133,7 @@
               if($stats_lg != 0){ ?> 
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
 
-                <a href="editar.php"><i style='font-size:20px; color:gray;  margin-right:20%;' class="fas fa-pen"></i></a>
+                <a href="alterar.php?cd_f=<?php echo $exibe['cd_func'] ?>"><i style='font-size:20px; color:gray;  margin-right:20%;' class="fas fa-pen"></i></a>
                 <a href="confirmar.php?cd=<?php echo $exibe['cd_func'] ?>"><i style='font-size:20px; color:red;' class="fas fa-trash"></i></a>
 
               </td>

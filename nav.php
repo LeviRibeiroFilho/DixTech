@@ -62,7 +62,7 @@ if(!empty($_SESSION['ID'])){
                   <i style='font-size:20px; color:green;' class='fas'>&#xf406;</i>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="perfil.php?cd=<?php echo $exibe_usuario['cd_func'];?>"><?php echo $exibe_usuario['nome_func'] ?><i style='font-size:20px; color:black; position: absolute; right: 8%; margin-top: 1%;' class='fas'>&#xf406;</i></a>
+                  <a class="dropdown-item" href="perfil.php?cd=<?php echo $exibe_usuario['cd_func'];?>"><?php echo mb_strimwidth($exibe_usuario['nome_func'],0 ,13 ,'...'); ?><i style='font-size:20px; color:black; position: absolute; right: 8%; margin-top: 1%;' class='fas'>&#xf406;</i></a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="sair.php"> Sair</a>
                   <a class="dropdown-item" href="func.php">Funcionários</a>

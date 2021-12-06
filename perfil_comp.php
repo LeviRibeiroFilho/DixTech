@@ -49,11 +49,11 @@
 
     
 
-    if(empty($_GET['cd'])){
-      $cd_func = $_GET['cd_f'];
-    } else {
-      $cd_func = $_GET['cd'];
-    }
+    
+    $cd_func = $_GET['cd'];
+    
+      
+    
     
     $consulta = $cn->query("select * from func where cd_func = '$cd_func'");
     $exibe = $consulta->fetch(PDO::FETCH_ASSOC);
@@ -93,9 +93,9 @@
               <div class="py-6 px-3 mt-32 sm:mt-0">
 
                 <?php if($_SESSION['Status'] == 1){ ?>
-                  <button class="bg-gray-500 uppercase text-white font-normal hover:shadow-md shadow text-xs px-3 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear" type="button">
-                    <a href="alterar.php?cd_f= <?php echo $exibe['cd_func'] ?> "><i class="fas fa-pen mr-2 fa-lg text-blueGray-700"></i>Editar</a>
-                  </button>
+                <button class="bg-gray-500 uppercase text-white font-normal hover:shadow-md shadow text-xs px-3 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear" type="button">
+                <i class="fas fa-pen mr-2 fa-lg text-blueGray-700"></i>Editar
+                </button>
                 <?php }; ?>
               </div>
             </div>
