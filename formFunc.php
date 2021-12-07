@@ -65,7 +65,7 @@
     <form method="post" action="insFunc.php" name="insfunc" enctype="multipart/form-data">
         <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
             <div>
-                <label class="text-base leading-7 text-blueGray-500" for="username">Nome</label>
+            <label class="text-white dark:text-gray-200" for="emailAddress">Nome</label>
                 <input name="txtnome" type="text" class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:outline-none focus:border-blueGray-500 focus:bg-white focus:shadow-none focus:ring-2 ring-offset-current ring-offset-2">
             </div>
 
@@ -134,7 +134,7 @@
             </div>
             
             <div>
-                <label for="txtfoto1">Foto Principal</label>
+            <label class="text-white dark:text-gray-200" for="txtfoto1">Foto</label>
 
 			    <input type="file" accept="image/*" class="form-control" name="txtfoto1" id="txtfoto1">
 			</div>
