@@ -58,13 +58,15 @@
     include "nav.php";
 ?>
 
+
 <section class="max-w-4xl p-6 mx-auto mb-10 bg-gray-400 rounded-md shadow-md mt-20">
     <h1 class="text-xl font-bold text-white capitalize dark:text-white">Adicionar Funcionário</h1>
+
     <form method="post" action="insFunc.php" name="insfunc" enctype="multipart/form-data">
         <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
             <div>
-                <label class="text-white dark:text-gray-200" for="username">Nome</label>
-                <input name="txtnome" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+            <label class="text-white dark:text-gray-200" for="emailAddress">Nome</label>
+                <input name="txtnome" type="text" class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:outline-none focus:border-blueGray-500 focus:bg-white focus:shadow-none focus:ring-2 ring-offset-current ring-offset-2">
             </div>
 
             <div>
@@ -132,7 +134,7 @@
             </div>
             
             <div>
-                <label for="txtfoto1">Foto Principal</label>
+            <label class="text-white dark:text-gray-200" for="txtfoto1">Foto</label>
 
 			    <input type="file" accept="image/*" class="form-control" name="txtfoto1" id="txtfoto1">
 			</div>
