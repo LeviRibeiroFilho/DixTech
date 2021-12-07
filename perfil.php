@@ -132,15 +132,16 @@
               <div class="w-full lg:w-9/12 px-4">
 
                   
-                <?php if($_SESSION['Status'] != 1){ ?>
-                <button class="bg-gray-400 active:bg-pink-300 uppercase text-white font-bold hover:shadow-md shadow text-xs px-3 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150" type="button">
-                  <i class="fas fa-lock mr-1 text-lg text-blueGray-500"></i> Ver tudo
-                </button>
+              <?php if($_SESSION['Status'] != 1){ ?>
+                  <div class="flex items-center w-full pt-4 mb-4">
+                    <button class="mx-auto w-40 py-2 text-base text-white transition duration-500 ease-in-out transform bg-blue-600 border-blue-600 rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blue-800 "><i class="fas fa-lock mr-1 text-lg text-white-500"></i> Ver tudo </button>
+                  </div>
                 <?php } else { ?>
 
-                  <a href="perfil_comp.php?cd=<?php echo $cd_func ?>"><button class="bg-gray-500 active:bg-pink-300 uppercase text-white font-bold hover:shadow-md shadow text-xs px-3 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150" type="button">
-                    Ver tudo
-                  </button>
+
+                  <a href="perfil_comp.php?cd=<?php echo $cd_func ?>"><div class="flex items-center w-full pt-4 mb-4">
+                    <button class="mx-auto w-40 py-2 text-base text-white transition duration-500 ease-in-out transform bg-blue-600 border-blue-600 rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blue-800 "> Ver tudo </button>
+                  </div></a>
 
                 <?php }?>
 
@@ -150,17 +151,7 @@
         </div>
       </div>
     </div>
-    <footer class="relative bg-blueGray-200 pt-8 pb-6 mt-8">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-wrap items-center md:justify-between justify-center">
-      <div class="w-full md:w-6/12 px-4 mx-auto text-center">
-        <div class="text-sm text-blueGray-500 font-semibold py-1">
-          Made with <a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank">Notus JS</a> by <a href="https://www.creative-tim.com" class="text-blueGray-500 hover:text-blueGray-800" target="_blank"> Creative Tim</a>.
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    
   </section>
 </main>
 
