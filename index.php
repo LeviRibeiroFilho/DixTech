@@ -34,8 +34,7 @@
         include "conexao.php";
         
 
-        //$consulta = $cn->query("select * from func where cd_func = '$_SESSION[ID]'");
-        //$exibe = $consulta->fetch(PDO::FETCH_ASSOC);
+        $consulta = $cn->query("select * from func limit 4");
 
         include "nav.php";
     ?>
@@ -57,8 +56,47 @@
     </div>
 </div>
 
-<div class="px-14">
-<h3 class="bg-gray-300 text-center py-2 font-sans mx-auto rounded-lg"><i class="fas fa-briefcase"></i> Serviços</h3>
+
+<div class="flex flex-col text-center w-full">
+    <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900"><i class="fas fa-user-friends mr-2"></i>MEMBROS</h1>
+    <p class="lg:w-2/3 mx-auto leading-relaxed text-5x1">Conheça alguns dos membros da DixTech</p>
+</div>
+
+<!-- component -->
+  <div id="container" class="w-4/5 mx-auto">
+    <div class="flex flex-col sm:flex-row">
+
+    
+
+    
+      
+    <?php while( $exibe = $consulta->fetch(PDO::FETCH_ASSOC)){  ?>
+      <div class="sm:w-1/4 p-2">
+        <div class="bg-whtie px-6 py-8 rounded-lg shadow-lg text-center">
+          <div class="mb-3">
+            <img
+              class="w-auto mx-auto rounded-full"
+              src="src/<?php echo $exibe['foto_func'] ?>"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl font-medium text-gray-700"><?php echo $exibe['nome_func'] ?></h2>
+          <span class="text-blue-500 block mb-5"><?php echo $exibe['cargo_func'] ?></span>
+
+          <a href="perfil_client.php?cd=<?php echo $exibe['cd_func'] ?>" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+            >Ver Perfil</a
+          >
+        </div>
+      </div>
+      <?php } ?>
+      
+
+    </div>
+  </div>
+
+  <div class="flex border-t flex-col text-center w-full mt-10">
+    <h1 class="pt-10 sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900"><i class="fas fa-wrench mr-2"></i>SERVIÇOS</h1>
+    <p class="lg:w-2/3 mx-auto leading-relaxed text-5x1">Alguns dos membros de nossa equipe DixTech</p>
 </div>
 
 
@@ -156,9 +194,10 @@
   </div>
 </section>
 
-  <div class="border-t flex flex-col text-center w-full mb-2">
-    <h1 class="mt-5 sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900"><i class="fas fa-map-marker-alt"></i> Localização </h1>
-  </div>
+<div class="border-t flex flex-col text-center w-full pb-5">
+    <h1 class="pt-10 sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900"><i class="fas fa-map-marker-alt mr-2"></i>LOCALIZAÇÃO</h1>
+    <p class="lg:w-2/3 mx-auto leading-relaxed text-5x1">Venha nos visitar em nossa instalação física!</p>
+</div>
 
   <section class="text-gray-600 body-font relative">
   <div class="absolute inset-0 bg-gray-300">
