@@ -18,6 +18,8 @@ $endereco = $_POST['txtendereco'];
 $atividade = $_POST['txtatividade'];
 $recebe_foto1 = $_FILES['txtfoto1'];
 
+$vcpf = str_replace("-", "", str_replace(".", "", $cpf));
+
 
 
 $destino = "src/"; 
@@ -36,7 +38,7 @@ $img_nome1 = md5(uniqid(time())).".".$extencao1[1];
 
  try {  // try para tentar inserir
     
-    $inserir=$cn->query("INSERT INTO func(cd_func, status_func, cpf_func, nome_func, sobrenome_func, data_nasc, tel_func, email_func, senha_func, sexo_func, cargo_func, endereco_func, atividade_func, foto_func) VALUES (default, '$status', '$cpf', '$nome', '$sobrenome', '$data', '$tel', '$email', '$senha', '$sexo', '$cargo', '$endereco', '$atividade', '$img_nome1')");
+    $inserir=$cn->query("INSERT INTO func(cd_func, status_func, cpf_func, nome_func, sobrenome_func, data_nasc, tel_func, email_func, senha_func, sexo_func, cargo_func, endereco_func, atividade_func, foto_func) VALUES (default, '$status', '$vcpf', '$nome', '$sobrenome', '$data', '$tel', '$email', '$senha', '$sexo', '$cargo', '$endereco', '$atividade', '$img_nome1')");
     
     move_uploaded_file($recebe_foto1['tmp_name'], $destino.$img_nome1);             
     $resizeObj = new resize($destino.$img_nome1);   

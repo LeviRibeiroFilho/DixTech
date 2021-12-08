@@ -11,7 +11,13 @@
     //echo $vcpf1.'<br>';
     $vcpf = str_replace("-", "", str_replace(".", "", $vcpf1));
     
-    
+
+    //$consulta = $cn->query("select * from func");
+    //$exibeUsuario = $consulta->fetch(PDO::FETCH_ASSOC);
+    //echo $exibeUsuario['cpf_func'].'<br>';
+    //echo $vcpf.'<br>';
+    //echo $exibeUsuario['senha_func'].'<br>'; 
+    //echo $vsenha;
     $consulta = $cn->query("select * from func where cpf_func = '$vcpf' and senha_func = '$vsenha'");
     if($consulta->rowCount() == 1){
         $exibeUsuario = $consulta->fetch(PDO::FETCH_ASSOC);

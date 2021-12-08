@@ -19,6 +19,8 @@ $atividade = $_POST['txtatividade'];
 $recebe_foto1 = $_FILES['txtfoto1'];
 $cd_func = $_GET['cd'];
 
+$vcpf = str_replace("-", "", str_replace(".", "", $cpf));
+
 if(empty($cd_func)){
     header('location:func.php');
 };
@@ -50,7 +52,7 @@ try {  // try para tentar inserir
     $alterar=$cn->query("update func set 
 
     status_func = '$status', 
-    cpf_func = '$cpf', 
+    cpf_func = '$vcpf', 
     nome_func = '$nome', 
     sobrenome_func = '$sobrenome', 
     data_nasc = '$data', 
