@@ -45,13 +45,7 @@
 
     <div class="jumbotron jumbotron-fluid" style="background-image: url(src/teste.jpg); background-size: cover; height: 75vh; opacity:0.9;">
       <div class="container">
-        <h1 class="display-4" style="color: white; font-family: 'Nunito', sans-serif; font-weight: 700;  ">Juntos </br> construimos </br> seus sonhos</h1>
-        <p class="lead" style="color: white; font-family: 'Nunito', sans-serif;">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
-
-        <button class="bg-white hover:bg-blue-500 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-full shadow">
-          Button
-        </button>
-
+        <h1 class="display-4" style="color: white; font-family: 'Nunito', sans-serif; font-weight: 700;  ">Juntos </br> construimos </br> o seu negócio</h1>
       </div>
     </div>
 </div>
@@ -102,42 +96,79 @@
 
 
 <main class="flex items-center p-10 w-full h-full bg-white">
-    <div class="border-b grid grid-cols-2 gap-8">
-        <div class="flex flex-col justify-start">
-            <div class="flex flex-col w-full object-cover h-4/6 justify-items-start border rounded-lg overflow-hidden"
-                style="min-heigth:320px">
-                <img class="w-full h-full object-cover" src='https://static.wixstatic.com/media/258dca_6de9489b55be456398f104592f38b524~mv2.jpg/v1/fill/w_594,h_375,al_c,q_80,usm_0.66_1.00_0.01/dev_software.webp' alt='Card Image' >
+	<div class="border-b pt-14 grid grid-cols-2 gap-8">
+		<div class="flex flex-col justify-start">
+			<div class="flex flex-col w-full object-cover h-4/6 justify-items-start border rounded-lg overflow-hidden"
+				style="min-heigth:320px">
+				<img class="w-full h-full object-cover" src='https://th.bing.com/th/id/R.3a720f0b2f7608a1c9334331869a0e0b?rik=G2VD8rxcBQbZKw&riu=http%3a%2f%2fdmgtechs.com%2fwp-content%2fuploads%2f2017%2f10%2fdatacenter11.jpg&ehk=MXS%2bmOqW9Qi5DC8g%2bPV9GQ%2fCmitQIJnK0QvlX%2bFbjSM%3d&risl=&pid=ImgRaw&r=0' alt='Card Image' >
             </div>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col gap-4">
+					<h1 class="capitalize text-4xl font-extrabold"><i class="fas fa-database mr-2"></i>Banco de Dados</h1>
+					<p class="text-lg text-gray-500	">A DixTech oferece serviços que garantem a Gestão do Banco de Dados (Oracle, SQL, MySql), integrando ferramentas de mercado que agilizam as rotinas diárias, instalações e configurações
+            Nossos sistemas de gestão funcionam em regime 24×7 com equipe capacitada e dimensionada para prestar este serviço de suporte, monitoramento, segurança, backup e restore, atualização de versões, patches e migração. 
+					</p>
+			</div>
+		</div>
+	</div>
+</main>
+<main class="flex items-center p-10 w-full h-full bg-white">
+	<div class="border-b pt-10 grid grid-cols-2 gap-8">
+		<div class="flex flex-col justify-start">
+			<div class="flex flex-col w-full object-cover h-4/6 justify-items-start border rounded-lg overflow-hidden"
+				style="min-heigth:320px">
+				<img class="w-full h-full object-cover" src='https://www.cadcamperformance.com/wp-content/uploads/2018/03/Learning-Creative-Skills-Through-Online-Courses.png' alt='Card Image' >
             </div>
-            <div class="flex flex-col">
-                <div class="flex flex-col gap-4">
-                    <h1 class="capitalize text-4xl font-extrabold">Criação de Softwares</h1>
-                    <p class="text-lg text-gray-500    ">A DixTech possui um portfólio completo de soluções para desenvolvimento ágil de softwares conforme as particularidades de cada cliente.
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col gap-4">
+					<h1 class="capitalize text-4xl font-extrabold"><i class="fas fa-paint-brush mr-2"></i>Design</h1>
+					<p class="text-lg text-gray-500	">Nossa excelente equipe de designers trabalha com os melhores aplicativos para criações. Toda a equipe é motivada a aplicar sua criatividade e originalidade em todos seus trabalhos.
+            Devido à nossa experiência em trabalhos anteriores, atualmente as criações se tornaram mais práticas graças à comunicação que oferecemos, possibilitando mais soluções de design e consequentemente uma aprovação mais satisfatória por parte do cliente.
+					</p>
+			</div>
+		</div>
+	</div>
+</main>
+<main class="flex items-center p-10 w-full h-full bg-white">
+	<div class="border-b pt-10 grid grid-cols-2 gap-8">
+		<div class="flex flex-col justify-start">
+			<div class="flex flex-col w-full object-cover h-4/6 justify-items-start border rounded-lg overflow-hidden"
+				style="min-heigth:320px">
+				<img class="w-full h-full object-cover" src='https://static.wixstatic.com/media/258dca_6de9489b55be456398f104592f38b524~mv2.jpg/v1/fill/w_594,h_375,al_c,q_80,usm_0.66_1.00_0.01/dev_software.webp' alt='Card Image' >
+            </div>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col gap-4">
+					<h1 class="capitalize text-4xl font-extrabold"><i class="fas fa-laptop-code mr-2"></i>Criação de Softwares</h1>
+					<p class="text-lg text-gray-500	">A DixTech possui um portfólio completo de soluções para desenvolvimento ágil de softwares conforme as particularidades de cada cliente.
              Nossos profissionais capacitados empregam uma variedade de tecnologias para atender a uma ampla gama de requisitos de empresas de diversos setores e tamanhos, desde startups que desejam lançar sua primeira proposta digital até grandes corporações com sistemas legados complexos.
-                    </p>
+					</p>
+			</div>
+		</div>
+	</div>
+</main>
+<main class="flex items-center p-10 w-full h-full bg-white">
+	<div class="border-b pt-10 grid grid-cols-2 gap-8">
+		<div class="flex flex-col justify-start">
+			<div class="flex flex-col w-full object-cover h-4/6 justify-items-start border rounded-lg overflow-hidden"
+				style="min-heigth:320px">
+				<img class="w-full h-full object-cover" src='https://kngcomunicacao.com.br/wp-content/uploads/2020/09/Perspective-Web-Screens-Mockup00-1980x1244.png' alt='Card Image' >
             </div>
-        </div>
-    </div>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col gap-4">
+					<h1 class="capitalize text-4xl font-extrabold"><i class="fas fa-sitemap mr-2"></i>Criação de Sites</h1>
+					<p class="text-lg text-gray-500	"> 
+          Acreditamos na individualidade do empresário e de seu negócio, com objetivos únicos e específicos. Pensando nisso, criamos uma metodologia de criação de sites humanizada.
+          Por que você quer criar um site? Esse é o ponto de partida, vamos conversar sobre seus objetivo e expectativas, analisar o mercado competitivo, quem são seus clientes e o que eles buscam.
+        	</p>
+			</div>
+		</div>
+	</div>
 </main>
 
-<main class="flex items-center p-10 w-full h-full bg-white">
-    <div class="border-b grid grid-cols-2 gap-8">
-        <div class="flex flex-col justify-start">
-            <div class="flex flex-col w-full object-cover h-4/6 justify-items-start border rounded-lg overflow-hidden"
-                style="min-heigth:320px">
-                <img class="w-full h-full object-cover" src='https://static.wixstatic.com/media/258dca_6de9489b55be456398f104592f38b524~mv2.jpg/v1/fill/w_594,h_375,al_c,q_80,usm_0.66_1.00_0.01/dev_software.webp' alt='Card Image' >
-            </div>
-            </div>
-            <div class="flex flex-col">
-                <div class="flex flex-col gap-4">
-                    <h1 class="capitalize text-4xl font-extrabold">Criação de Softwares</h1>
-                    <p class="text-lg text-gray-500    ">A DixTech possui um portfólio completo de soluções para desenvolvimento ágil de softwares conforme as particularidades de cada cliente.
-             Nossos profissionais capacitados empregam uma variedade de tecnologias para atender a uma ampla gama de requisitos de empresas de diversos setores e tamanhos, desde startups que desejam lançar sua primeira proposta digital até grandes corporações com sistemas legados complexos.
-                    </p>
-            </div>
-        </div>
-    </div>
-</main>
 
 <section class=" text-gray-600 body-font">
   <div class="container pt-5 py-24 mx-auto ">
