@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>🏠 - DixTech</title>
+    <title>DixTech</title>
+    <link rel="icon" type="imagem/png" href="src/dtico.ico" />
 
     <!-- CSS Links (TailWind) -->
     <link rel="stylesheet" href="styles/style.css">
@@ -133,7 +134,7 @@
               if($stats_lg != 0){ ?> 
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
 
-                <a href="alterar.php?cd_f=<?php echo $exibe['cd_func'] ?>"><i style='font-size:20px;  margin-right:20%;' class=" text-blue-500 fas fa-pen"></i></a>
+                <a href="alterar.php?cd_f=<?php echo $exibe['cd_func'] ?>"><i style='font-size:20px;  margin-right:20%;' class=" text-blue-400 fas fa-pen"></i></a>
                 <a href="confirmar.php?cd=<?php echo $exibe['cd_func'] ?>"><i style='font-size:20px;' class="text-red-600 fas fa-trash"></i></a>
 
               </td>
@@ -158,7 +159,7 @@
   </div>
 </div>
 
-
+<?php include 'footer.php' ?>    
 
 
 </body>

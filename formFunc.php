@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>🏠 - DixTech</title>
+    <title>DixTech</title>
+    <link rel="icon" type="imagem/png" href="src/dtico.ico" />
 
     <!-- CSS Links (TailWind) -->
     <link rel="stylesheet" href="styles/style.css">
@@ -172,7 +173,7 @@
 
 
 
- 
+<?php include 'footer.php' ?>    
 
 
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>🏠 - DixTech</title>
+    <title>DixTech</title>
+    <link rel="icon" type="imagem/png" href="src/dtico.ico" />
 
     <!-- CSS Links (TailWind) -->
     <link rel="stylesheet" href="styles/style.css">
@@ -162,7 +163,7 @@
             <div>
                 <label class="text-white" for="txtfoto1">Foto Principal</label>
 
-			    <input value="<?php echo $exibe['foto_func'] ?>" type="file" accept="image/*" class="form-control" name="txtfoto1" id="txtfoto1">
+			    <input value="" type="file" accept="image/*" class="form-control" name="txtfoto1" id="txtfoto1">
 			</div>
             <!--<div>
                 <label class="block text-sm font-medium text-white">
@@ -200,6 +201,6 @@
 
  
 
-
+<?php include 'footer.php' ?>    
 
 </body>

@@ -19,6 +19,7 @@ $atividade = $_POST['txtatividade'];
 $recebe_foto1 = $_FILES['txtfoto1'];
 $cd_func = $_GET['cd'];
 
+
 $vcpf = str_replace("-", "", str_replace(".", "", $cpf));
 
 if(empty($cd_func)){
@@ -28,7 +29,6 @@ if(empty($cd_func)){
 $consulta = $cn->query("select foto_func from func where cd_func = '$cd_func'");
 $exibir = $consulta->fetch(PDO::FETCH_ASSOC);
 
-echo $recebe_foto1;
 
 
 $destino = "src/"; 
@@ -38,12 +38,12 @@ if(!empty($recebe_foto1['name'])) {
 preg_match("/\.(jpg|jpeg|png|gif){1}$/i",$recebe_foto1['name'],$extencao1);
 $img_nome1 = md5(uniqid(time())).".".$extencao1[1];
 
-$upload_foto1=1;
+$upload_foto=1;
 
 } else {
 
     $img_nome1 = $exibir['foto_func'];
-    $upload_foto1=0;
+    $upload_foto=0;
 }
 
 
@@ -73,6 +73,7 @@ try {  // try para tentar inserir
     $resizeObj = new resize($destino.$img_nome1);   
     $resizeObj -> resizeImage(150, 150, 'exact');
     $resizeObj -> saveImage($destino.$img_nome1, 100);
+
 
     }
     
