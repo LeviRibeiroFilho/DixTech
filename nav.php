@@ -45,9 +45,8 @@ if(!empty($_SESSION['ID'])){
 
       <div class="absolute inset-y-0 right-0 flex items-center pr-0 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Nossa Missão</a>
 
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sobre Nós</a>
+            <a href="sobre_nos.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sobre Nós</a>
 
             
             
@@ -107,3 +106,5 @@ if(!empty($_SESSION['ID'])){
 
                 
  -->
+
+ 

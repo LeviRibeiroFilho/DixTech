@@ -77,7 +77,9 @@ foto_func
 
 */
 
-select * from func;
+select * from func limit 4;
+
+delete from func where cd_func = '2';
 
 CREATE USER 'dixtech'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345678';
 GRANT ALL PRIVILEGES ON dbDixPhp.* TO 'dixtech'@' localhost' WITH GRANT OPTION;

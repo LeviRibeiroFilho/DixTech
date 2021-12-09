@@ -133,7 +133,7 @@
               if($stats_lg != 0){ ?> 
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
 
-                <a href="alterar.php?cd_f=<?php echo $exibe['cd_func'] ?>"><i style='font-size:20px; color:gray;  margin-right:20%;' class="fas fa-pen"></i></a>
+                <a href="alterar.php?cd_f=<?php echo $exibe['cd_func'] ?>"><i style='font-size:20px; color:blue;  margin-right:20%;' class="fas fa-pen"></i></a>
                 <a href="confirmar.php?cd=<?php echo $exibe['cd_func'] ?>"><i style='font-size:20px; color:red;' class="fas fa-trash"></i></a>
 
               </td>

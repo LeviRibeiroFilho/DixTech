@@ -155,7 +155,7 @@
           <h2 class="text-xl font-medium text-gray-700"><?php echo $exibe['nome_func'] ?></h2>
           <span class="text-blue-500 block mb-5"><?php echo $exibe['cargo_func'] ?></span>
 
-          <a href="perfil_client.php?cd=<?php echo $exibe['cd_func'] ?>" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+          <a href="perfil_client.php?cd=<?php echo $exibe['cd_func'] ?>" class="px-4 py-2 bg-blue-500 text-white rounded-lg"
             >Ver Perfil</a
           >
         </div>
@@ -165,6 +165,29 @@
 
     </div>
   </div>
+
+ 
+  <div class="border-t mt-5 flex flex-col text-center w-full mb-5">
+      <h1 class="pt-5 sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900"><i class="far fas fa-book mr-2"></i>NOSSA HISTÓRIA</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-5x1">Conheça um pouco de nossa trajetória</p>
+    </div>
+  <div class="border-b pb-5 container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 w-100% h-screen">
+        <div class="max-h-96 md:h-screen">
+          <img class="w-screen h-screen object-cover object-top" src="https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        </div>
+        <div class="flex bg-gray-100 p-10">
+          <div class="mb-auto mt-auto max-w-lg">
+            <h1 class="text-3xl uppercase">Nossa História</h1>
+            <p class="font-semibold mb-5">DixTech Corp.</p>
+            <p>&emsp;&emsp;A Dix Tech Corporation foi criado no dia 10 de setembro de 2020 por 7 estudantes da Etec Professor Basilides de Godoy, que são: Arthur Renan, Gustavo Sousa,  João Vítor, Kaio Gomes, Luiz Felipe, Rodrigo Barreto e Thiago Galvao.<br><br> 
+                                &emsp;&emsp;A nossa empresa surgiu depois de um trabalho em grupo, onde os estudantes perceberam que trabalhavam bem juntos e que poderiam fazer algo de nível mais profissional. Por isso eles decidiram criar a DixTech e criar sistemas completos para os clientes sempre com um preço justo e tempo de entrega sempre abaixo de 3 meses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 
 <section class=" text-gray-600 body-font">
@@ -229,14 +252,14 @@
 
   <section class="text-gray-600 body-font relative">
   <div class="absolute inset-0 bg-gray-300">
-    <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.2561942393154!2d-46.683001356507745!3d-23.588451747772023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57437df287e3%3A0xb2c5a9f4121fac32!2sEdif%C3%ADcio%20Faria%20Lima%20Square!5e0!3m2!1spt-BR!2sbr!4v1638977752815!5m2!1spt-BR!2sbr" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+    <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3658.330469423229!2d-46.7306576!3d-23.5206136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Professor%20Basilides%20de%20Godoy.!5e0!3m2!1spt-BR!2sbr!4v1639050922640!5m2!1spt-BR!2sbr" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
   </div>
   <div class="container px-5 py-24 mx-auto flex">
     <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
       <h2 class="text-center text-gray-900 text-lg mb-1 font-medium title-font">Local</h2>
       <p class="text-center leading-relaxed mb-5 text-gray-600">Você também pode nos visitar a qualquer momento no seguinte endereço</p>
       <div class="relative mb-4">
-      <p class="text-center font-bold ">Av. Brg. Faria Lima, 3600 - Itaim Bibi, São Paulo - SP, 04538-132</p>
+      <p class="text-center font-bold ">R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-000</p>
 
       </div>
       <div class="relative mb-4">
@@ -250,99 +273,11 @@
 
           <!-- This example requires Tailwind CSS v2.0+
         -->
-        <footer class="mt-10 bg-gray-100" aria-labelledby="footer-heading">
+        <footer class="mt-10 bg-gray-200" aria-labelledby="footer-heading">
             <h2 id="footer-heading" class="sr-only">Footer</h2>
-            <div class="px-5 py-12 mx-auto max-w-7xl lg:py-16 md:px-12 lg:px-20">
-              <div class="md:grid md:grid-cols-5 md:gap-8">
-                <div>
-                  <h3 class="text-xs font-semibold tracking-wider text-blue-600 uppercase"> Solutions </h3>
-                  <ul role="list" class="mt-4 space-y-4">
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Marketing </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Analytics </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Commerce </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Insights </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="mt-12 md:mt-0">
-                  <h3 class="text-xs font-semibold tracking-wider text-blue-600 uppercase"> Support </h3>
-                  <ul role="list" class="mt-4 space-y-4">
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Pricing </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Documentation </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Guides </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> API Status </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="mt-12 md:mt-0">
-                  <h3 class="text-xs font-semibold tracking-wider text-blue-600 uppercase"> Support </h3>
-                  <ul role="list" class="mt-4 space-y-4">
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Pricing </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Documentation </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Guides </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> API Status </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="mt-12 md:mt-0">
-                  <h3 class="text-xs font-semibold tracking-wider text-blue-600 uppercase"> Support </h3>
-                  <ul role="list" class="mt-4 space-y-4">
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Pricing </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Documentation </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Guides </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> API Status </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="mt-12 md:mt-0">
-                  <h3 class="text-xs font-semibold tracking-wider text-blue-600 uppercase"> Support </h3>
-                  <ul role="list" class="mt-4 space-y-4">
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Pricing </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Documentation </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> Guides </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-sm font-normal text-gray-500 hover:text-gray-900"> API Status </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            
             <div class="
-            bg-gray-100
+            bg-gray-200
           px-5
           py-12
           mx-auto
