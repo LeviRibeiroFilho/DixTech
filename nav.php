@@ -7,7 +7,10 @@ if(!empty($_SESSION['ID'])){
   
 ?>
 
-<nav class="bg-black">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
   <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
     <div class="relative flex items-center justify-between h-16">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -76,6 +79,7 @@ if(!empty($_SESSION['ID'])){
       </div>
     </div>
   </div>
+</nav>
 
   <!-- Mobile menu, show/hide based on menu state. -->
   <div class="sm:hidden" id="mobile-menu">
@@ -102,9 +106,40 @@ if(!empty($_SESSION['ID'])){
                   <a class="dropdown-item" href="#">Another action</a>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-                </div>
-
-                
+                </div>    
  -->
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <div class="relative mx-3">
+      <div class="dropdown dropleft">
+        <button class="btn dropleft btn-secondary bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i style='font-size:20px; color:green;' class='fas'>&#xf406;</i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="perfil.php?cd=<?php echo $exibe_usuario['cd_func'];?>"><?php echo mb_strimwidth($exibe_usuario['nome_func'],0 ,13 ,'...'); ?><i style='font-size:20px; color:black; position: absolute; right: 8%; margin-top: 1%;' class='fas'>&#xf406;</i></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="sair.php"> Sair</a>
+          <a class="dropdown-item" href="func.php">Funcionários</a>
+        </div>
+      </div>
+            </div>
+
+            <div class="absolute inset-y-0 right-0 flex items-center pr-0 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+
+            <a href="sobre_nos.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sobre Nós</a>
+
+            
+            
+           
+        </div>
+  </div>
+</nav>
 
  
