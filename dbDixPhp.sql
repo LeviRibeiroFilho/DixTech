@@ -77,7 +77,7 @@ foto_func
 
 */
 
-select * from func limit 4;
+select * from func;
 
 delete from func where cd_func = '2';
 

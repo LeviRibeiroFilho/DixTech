@@ -26,6 +26,16 @@
     <!-- Font Awesome Link-->
     <script src="https://kit.fontawesome.com/629ec9bdfe.js" crossorigin="anonymous"></script>
 
+    <script src="jquery.mask.js"></script>
+    <script>
+
+    $(document).ready(function(){
+    $("#cel_mens").mask("(00) 00000-0000");
+
+    });
+
+    </script>
+
     
 
 </head>
@@ -191,30 +201,38 @@
     </div>
 
     <div class="leading-loose">
-  <form class="max-w-x m-4 p-10 bg-white rounded shadow-xl">
-  <div class=" mt-2 flex flex-col text-center w-full mb-5">
+  <form method="post" action="insMens.php" name="insfunc" enctype="multipart/form-data" class="max-w-x m-4 p-10 bg-white rounded shadow-2xl">
+
+    <div class=" mt-2 flex flex-col text-center w-full mb-5">
       <h1 class="pt-5 sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900"><i class="fas fa-phone-square-alt mr-2"></i>FALE CONOSCO</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-5x1">Contate-nos</p>
     </div>
+
+
     <div class="mt-7">
-      <label class="block text-sm text-gray-00" for="cus_name">Name</label>
-      <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="cus_name" name="cus_name" type="text" required="" placeholder="Como você gostaria de ser chamado?" aria-label="Name">
+      <label class="text-sm block text-gray-600" for="text">Nome</label>
+      <input name="nome_mens" id="nome_mens" type="text" required="" placeholder="Como você gostaria de ser chamado?" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded">
     </div>
+
     <div class="mt-2">
-      <label class="block text-sm text-gray-600" for="cus_email">Email</label>
-      <input class="w-full px-5  py-3 text-gray-700 bg-gray-200 rounded" id="cus_email" name="cus_email" type="text" required="" placeholder="Seu Email principal" aria-label="Email">
+      <label class="text-sm block text-gray-600" for="emailAddress">Email</label>
+      <input name="email_mens" id="emial_mens" type="text" required="" placeholder="Seu Email principal" class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded">
     </div>
+
     <div class="mt-2">
-      <label class=" block text-sm text-gray-600" for="cus_email">Celular</label>
-      <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded" id="cus_email" name="cus_email" type="text" required="" placeholder="De preferência com Whatsapp" aria-label="Tel">
+      <label class="text-sm block text-gray-600" for="text">Celular</label>
+      <input name="cel_mens" id="cel_mens" type="text" required="" placeholder="Seu número de telefone" class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded">
     </div>
-    <div class="mt-3">
-      <label class="text-sm block text-gray-600" for="cus_email">Mensagem</label>
-      <input class="w-full px-5 py-6 text-gray-700 bg-gray-200 rounded" id="cus_email" name="cus_email" type="text" required="" placeholder="Escreva aqui o que você precisa..." aria-label="Message">
+
+    <div class="mt-4">
+      <label class="text-sm block text-gray-600" for="text">Mensagem</label>
+      <input name="mens_mens" id="mens_mens" type="text" required="" placeholder="Escreva aqui o que você precisa..." class="w-full px-5 py-6 text-gray-700 bg-gray-200 rounded">
     </div>
+
     <div class="mt-4">
       <button class="px-6 py-1 text-white font-light tracking-wider bg-gray-900 rounded" type="submit">Enviar</button>
     </div>
+
   </form>
 </div>
 
@@ -248,7 +266,7 @@
         background-blend-mode: multiply;">
         <i class="fab fa-facebook fa-3x" style=" color:white;"></i>
           <h2 class="title-font font-medium text-3xl text-white">Facebook</h2>
-          <p class="leading-relaxed"><a href="https://www.facebook.com/Dix-Tech-Corporation-116487190215728/" class="text-white">@dix_tech</p></a>
+          <p class="leading-relaxed"><a href="https://www.facebook.com/Dix-Tech-Corporation-116487190215728/" class="text-white">@Dix Tech Corporation</p></a>
         </div>
       </div>
 
@@ -258,7 +276,7 @@
         background-blend-mode: multiply;">
         <i class="fab fa-linkedin fa-3x" style=" color:white;"></i>
           <h2 class="title-font font-medium text-3xl text-white">LinkedIn</h2>
-          <p class="leading-relaxed"><a href="https://www.linkedin.com/in/dix-tech-corporation-b83a961b8" class="text-white">@dix_tech</p></a>
+          <p class="leading-relaxed"><a href="https://www.linkedin.com/in/dix-tech-corporation-b83a961b8" class="text-white">@Dix Tech Corporation</p></a>
         </div>
       </div>
 
@@ -268,7 +286,7 @@
         background-blend-mode: multiply;">
         <i class="fab fa-github fa-3x" style=" color:white;"></i>
           <h2 class="title-font font-medium text-3xl text-white">GitHub</h2>
-          <p class="leading-relaxed"><a href="https://github.com/dixdixtech" class="text-white">@dix_tech</p></a>
+          <p class="leading-relaxed"><a href="https://github.com/dixdixtech" class="text-white">@dixdixtech</p></a>
         </div>
       </div>
     </div>
