@@ -62,6 +62,7 @@ if(!empty($_SESSION['ID'])){
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="sair.php"> Sair</a>
                   <a class="dropdown-item" href="func.php">Funcionários</a>
+                  <a class="dropdown-item" href="mensagens.php">Mensagens</a>
                 </div>
               </div>
               

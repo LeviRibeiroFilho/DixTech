@@ -8,14 +8,6 @@ create table news_letter(
 
 );
 
-create table fale_conosco(
-    fale_id int primary key not null auto_increment,
-    fale_nome varchar(100) not null,
-    fale_email varchar(200) not null,
-    fale_tel int(13) not null,
-    fale_msg varchar(700) not null
-
-);
 
 create table func(
 	cd_func int primary key auto_increment,
@@ -83,3 +75,17 @@ delete from func where cd_func = '2';
 
 CREATE USER 'dixtech'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345678';
 GRANT ALL PRIVILEGES ON dbDixPhp.* TO 'dixtech'@' localhost' WITH GRANT OPTION;
+
+
+
+
+create table fale_conosco(
+	id_mens int primary key auto_increment,
+    nome_mens varchar(200) not null,
+    email_mens varchar(200) not null,
+    tel_mens varchar(17) not null,
+    mensagem_mens varchar(500) not null,
+    data_mens date not null
+);
+
+select * from fale_conosco;

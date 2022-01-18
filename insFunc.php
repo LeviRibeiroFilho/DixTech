@@ -18,6 +18,7 @@ $endereco = $_POST['txtendereco'];
 $atividade = $_POST['txtatividade'];
 $recebe_foto1 = $_FILES['txtfoto1'];
 
+
 $vcpf = str_replace("-", "", str_replace(".", "", $cpf));
 
 
