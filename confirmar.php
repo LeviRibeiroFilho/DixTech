@@ -75,11 +75,11 @@
         $error = $_GET['error'];
     ?>
         <p class="text-center text-red-600 mt-6 text-x1 font-semibold"><?php echo $error; ?></p>
-    <?php  
+    <?php 
     }
     ?>
 
 
 
-
+oi rs
 </body>
